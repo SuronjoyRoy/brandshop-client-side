@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2';
 import { AuthContext } from "../provider/AuthProvider";
@@ -7,7 +7,8 @@ import { AuthContext } from "../provider/AuthProvider";
 const Register = () => {
 
     const { createUser } = useContext(AuthContext);
-   
+    const [registerError, setRegisterError] = useState('');
+    const [success, setSuccess] = useState("");
 
     const handlRegister = e => {
         e.preventDefault();
@@ -19,13 +20,27 @@ const Register = () => {
         const password = form.get('password');
         console.log(name, number, email, password);
 
+        setRegisterError('');
+        setSuccess("");
+
+        if(password.length<6){
+            setRegisterError('password should be atleast 6 characters or longer');
+            return 
+        }
+        else if (!/[A-Z]/.test(password)) {
+            Swal.fire('Password do not have a capital letter');
+            return
+        }  else if (!/[!@#$%^&*]/.test(password)) {
+            Swal.fire('Password do not have a special character');
+            return
+        }
 
         // Create user
         createUser(email, password)
             .then(result => {
                 console.log(result)
                 Swal.fire(
-                    'Register Successfully!',
+                    'You have Successfully register!',
                     'Congratulations!',
                     'success');
             })
@@ -33,8 +48,8 @@ const Register = () => {
                 console.error(error)
                 Swal.fire(
                     'Register failed!',
-                    'bad lauck!',
-                    'question');
+                    'Write Special password!',
+                    'wrong');
             })
     }
 

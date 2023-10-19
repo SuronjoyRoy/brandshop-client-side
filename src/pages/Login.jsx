@@ -1,6 +1,14 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
+
+    const {logInUser} = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate(); 
+    console.log(location);
 
     const handlLogin = e =>{
         e.preventDefault();
@@ -9,6 +17,25 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password');
         console.log(email, password);
+
+        logInUser(email, password)
+        .then(result=>{
+            console.log(result.user);
+            Swal.fire(
+                'login Successfully!',
+               'Congratulations!',
+               'success');
+            navigate(location?.state? location.state : '/')
+
+            
+        })
+        .catch(error=>{
+            console.error(error)
+            Swal.fire(
+                'login failed!',
+               'Wrong Information!',
+               'question');
+        })
 
     }
     return (
