@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from'../assets/img/logo.png';
+import logo from'../assets/img/logo.svg';
 import img from '../assets/img/user.png';
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
@@ -56,11 +56,7 @@ const Header = () => {
                             <button className="btn">Login</button>
                         </Link>
                 }
-                    {/* <button onClick=''className="btn">Sing Out</button>
-                    <Link to='/login'>
-                        <button className="btn">Login</button>
-                    </Link>
-             */}
+                    
             </div>
         </div>
     );

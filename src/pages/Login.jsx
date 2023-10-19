@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import Swal from "sweetalert2";
+import googleimg from '../assets/img/IOS_Google_icon.png';
 
 const Login = () => {
 
@@ -63,7 +64,7 @@ const Login = () => {
                     </div>
                
                 <p className='text-center mt-2'>Do not have an account  <Link to='/register' className='text-blue-600 font-bold'>Register</Link></p>
-                <p className='text-center'><button onClick='' className="btn btn-ghost">google</button></p>
+                <button onClick='' className=""><img src={googleimg} className="w-[30%] ml-10" alt="" /></button>
                 </form>
                 
         </div>

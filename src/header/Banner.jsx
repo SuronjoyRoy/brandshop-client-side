@@ -32,10 +32,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-center py-8">
-                <h2 className="text-4xl mb-3">Our Services</h2>
-                <p className="text-1xl ">We provide our best yoga training and make happy you</p>
-            </div>
+            
         </div>
     );
 };
