@@ -2,21 +2,27 @@ import Swal from "sweetalert2";
 
 const AddProduct = () => {
 
-    const handleAddProduct = event =>{
-        event.preventDefault();
-
-        const form = event.target;
-
-        const bname = form.bname.value;
-        const pname= form.pname.value;
-        const price = form.price.value;
-        const quality = form.quality.value;
-        const rating = form.rating.value;
-        const details = form.details.value;
-        const photo = form.photo.value;
-
-        const newProduct = {bname, pname, price, quality, rating, details, photo};
-        console.log(newProduct);
+    const handleAddProduct = e =>{
+        e.preventDefault()
+    const form = e.target;
+    const name = form.name.value 
+    const brand = form.brand.value 
+    const type = form.type.value 
+    const price = form.price.value 
+    const rating = form.rating.value 
+    const details = form.details.value 
+    const photo = form.photo.value 
+    form.reset();
+    
+    const newProduct = {
+      name,
+      brand,
+      type,
+      price,
+      rating,
+      photo,
+      details
+    }
 
         // send data to the server
 
@@ -45,79 +51,133 @@ const AddProduct = () => {
     return (
         <div className="bg-[#F4F3F0] p-24">
     
-            <form onSubmit={handleAddProduct} className="bg-white p-20">
-            <h2 className="text-4xl text-center font-bold mb-5">Add a Product</h2>
-                {/* form name and quantity row control */}
-                <div className="md:flex mb-5">
-                    <div className="form-control w-1/2">
-                        <label className="label">
-                            <span className="label-text">Brand Name</span>
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="bname" placeholder="Brand Name" className="input input-bordered w-full" />
-                        </label>
-                    </div>
-                    <div className="form-control w-1/2 ml-4">
-                        <label className="label">
-                            <span className="label-text">Name</span>
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="pname" placeholder="Product Name" className="input input-bordered w-full" />
-                        </label>
-                    </div>
-                </div>
-                {/* form supplier and taste control */}
-                <div className="md:flex mb-5">
-                    <div className="form-control w-1/2">
-                        <label className="label">
-                            <span className="label-text">Price</span>
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="price" placeholder="Price" className="input input-bordered w-full" />
-                        </label>
-                    </div>
-                    <div className="form-control w-1/2 ml-4">
-                        <label className="label">
-                            <span className="label-text">Product quality</span>
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="quality" placeholder="Product quality" className="input input-bordered w-full" />
-                        </label>
-                    </div>
-                </div>
-                {/* form category and details control */}
-                <div className="md:flex mb-5">
-                    <div className="form-control w-1/2">
-                        <label className="label">
-                            <span className="label-text">Rating</span>
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="rating" placeholder="Rating" className="input input-bordered w-full" />
-                        </label>
-                    </div>
-                    <div className="form-control w-1/2 ml-4">
-                        <label className="label">
-                            <span className="label-text">Short description</span>
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="details" placeholder="Description" className="input input-bordered w-full" />
-                        </label>
-                    </div>
-                </div>
-                {/* form photo control */}
-                <div className="mb-5">
-                    <div className="form-control w-full">
-                        <label className="label">
-                            <span className="label-text">Img</span>
-                        </label>
-                        <label className="input-group">
-                            <input type="text" name="photo" placeholder="Enter your img url" className="input input-bordered w-full" />
-                        </label>
-                    </div>
-                </div>
-                
-                <input type="submit" value="Add Product" className="btn btn-block bg-[#d2b48c]" />
-            </form>
+   
+<div>
+        <h1 className="text-3xl font-bold text-center">Add a Product</h1>
+        <p className="text-center mb-10">Enter your details to Add Product .</p>
+      </div>
+      <form onSubmit={handleAddProduct}>
+        {/* form name and quantity row */}
+        <div className="md:flex gap-8 mb-4">
+          <div className="form-control md:w-1/2">
+            <label className="label">
+              <span className="label-text font-semibold">Name</span>
+            </label>
+            <label className="input-group">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                className="input input-bordered w-full"
+              />
+            </label>
+          </div>
+          <div className="form-control md:w-1/2">
+            <label className="label">
+              <span className="label-text font-semibold">Brand Name</span>
+            </label>
+            <label className="input-group">
+            <select
+                name="brand"
+                id=""
+                className=" input input-bordered w-full"
+              >
+                <option value="Acer">Acer</option>
+                <option value="Dell">Dell</option>
+                <option value="Apple">Apple</option>
+                <option value="Hp">Hp</option>
+                <option value="Asus">Asus</option>
+                <option value="Lenevo">Lenevo</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        {/* form supplier test row */}
+
+        <div className="md:flex gap-8 mb-4">
+          <div className="form-control md:w-1/2">
+            <label className="label">
+              <span className="label-text font-semibold">Type</span>
+            </label>
+            <label className="input-group">
+              <select
+                name="type"
+                id=""
+                className=" input input-bordered w-full"
+              >
+                <option value="Laptop">Laptop</option>
+                <option value="Phone">Phone</option>
+                <option value="Monitor">Monitor</option>
+                <option value="MacBook">MacBook</option>
+                <option value="Ultrabook">Ultrabook</option>
+                <option value="Netbook">Netbook</option>
+              </select>
+            </label>
+          </div>
+          <div className="form-control md:w-1/2">
+            <label className="label">
+              <span className="label-text font-semibold">Price</span>
+            </label>
+            <label className="input-group">
+              <input
+                name="price"
+                type="text"
+                placeholder="Price"
+                className="input input-bordered w-full"
+              />
+            </label>
+          </div>
+        </div>
+        {/* form category and details row */}
+        <div className="md:flex gap-8 mb-4">
+          <div className="form-control md:w-1/2">
+            <label className="label">
+              <span className="label-text font-semibold">Rating</span>
+            </label>
+            <label className="input-group">
+           
+              <input
+                type="text"
+                name="rating"
+                placeholder="Rating"
+                className="input input-bordered w-full"
+              />
+            </label>
+          </div>
+          <div className="form-control md:w-1/2">
+            <label className="label">
+              <span className="label-text font-semibold">Short Details</span>
+            </label>
+            <label className="input-group">
+            <textarea className="textarea  input input-bordered w-full h-[100px]  " name="details" placeholder="Bio"></textarea>
+              
+            </label>
+          </div>
+        </div>
+        {/* form photo url row */}
+        <div className="">
+          <div className="form-control md:w-full mb-4">
+            <label className="label">
+              <span className="label-text font-semibold">Photo URL</span>
+            </label>
+            <label className="input-group">
+              <input
+                type="text"
+                name="photo"
+                placeholder="
+                Photo URL link"
+                className="input input-bordered w-full"
+              />
+            </label>
+          </div>
+        </div>
+        <input
+          type="submit"
+          value="Add Product"
+          className="btn btn-block bg-black border-none text-white"
+        />
+      </form>
         </div>
     );
 };

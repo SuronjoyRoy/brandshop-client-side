@@ -1,51 +1,51 @@
 [
     {
       "id": 1,
-      "image": "https://i.ibb.co/0rYTVzP/card-6.png",
-      "title": "Nike",
-      "ad_img_1": "https://i.pinimg.com/564x/fa/45/96/fa4596ad9a9d39901eeb455ed4f74e44.jpg",
-      "ad_img_2": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_1263,c_limit/tpqid8vgfey6m4ke86te/nike-joyride.jpg",
-      "ad_img_3": "https://www.tennisplaza.com/company/default/assets/Image/Aus-Open-2015-Nike_05(1).jpg"
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Dell_Logo.png/800px-Dell_Logo.png",
+      "title": "Dell",
+      "ad_img_1": "https://i.ibb.co/KqXyzZ3/rev-home8-2.png",
+      "ad_img_2": "https://i.ibb.co/b24zD0R/Dell-Sept-14.jpg",
+      "ad_img_3": "https://i.ibb.co/m4wPfxY/Product-26-600x600.jpg"
     },
     {
       "id": 2,
-      "image": "https://i.ibb.co/gm92CGs/card-1.png",
-      "title": "Adidas",
-      "ad_img_1": "https://newsolez.com/wp-content/uploads/2018/02/banner_addidas_originals_promo_b7ad4407-7dd0-4ca9-8881-29d04bbda68a_1600x681-e1563918699775.png",
-      "ad_img_2": "https://cdn.shopify.com/s/files/1/2558/7888/files/adidas-originals-shoes-banner_3f88e1ad-e16c-4c25-83e5-cfcaa8e6c199_1024x1024.jpg?v=1522315732",
-      "ad_img_3": "https://cdn.denimandcloth.com.au/content/uploads/2014/11/18121834/adidas-banner.jpg"
+      "image": "https://i.ibb.co/6nCg2Df/ApplePL.jpg",
+      "title": "Apple",
+      "ad_img_1": "https://gumlet.assettype.com/afaqs%2F2021-10%2Ff6816195-22a8-489c-bf4f-f3f376c676cc%2FApple_MacBook_Pro_14_16_inch_10182021_big_jpg_medium.jpg?auto=format%2Ccompress&w=1200",
+      "ad_img_2": "https://www.gizmochina.com/wp-content/uploads/2021/10/macbook-pro-2021-renders.jpg",
+      "ad_img_3": "https://www.cgdirector.com/wp-content/uploads/media/2023/07/Are-Apple-Laptops-Worth-It-Twitter.jpg"
     },
     {
       "id": 3,
-      "image": "https://i.ibb.co/17FQJLW/card-5.jpg",
-      "title": "H&M",
-      "ad_img_1": "https://cdn.grabon.in/gograbon/images/merchant/1661410044376.jpg",
-      "ad_img_2": " https://retailwire.com/wp-content/uploads/2022/11/hm-brasserrie-hennes-williamsburg-666x333-1.jpg",
-      "ad_img_3":"https://cdn.trendhunterstatic.com/thumbs/495/williamsburg.jpeg?auto=webp "
+      "image": "https://i.ibb.co/tcpPQHd/Hp.png",
+      "title": "Hp",
+      "ad_img_1": "https://static.toiimg.com/photo/msid-86708024/86708024.jpg",
+      "ad_img_2": " https://i.ytimg.com/vi/kfaIZsWoIr8/maxresdefault.jpg",
+      "ad_img_3":"https://img.freepik.com/premium-vector/new-laptop-sale-promotion-social-facebook-cover-banner_252779-424.jpg"
       
     },
     {
       "id": 4,
-      "image": "https://static.vecteezy.com/system/resources/previews/020/665/018/original/gucci-logo-gucci-icon-on-black-background-free-vector.jpg",
-      "title": "Gucci",
-      "ad_img_1": "https://images.squarespace-cdn.com/content/v1/5ada10c6710699da7e536301/1533810240561-W8N4GF8Q6VMGVMP66RWR/Gucci+Header.jpg?format=2500w",
-      "ad_img_2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNvvHV1GU2cEKhwAm6ix2q6IQrJT29RU8evPnAYhc0yB45RXI2yrL8T07lxpnKKJT2RHM&usqp=CAU ",
-      "ad_img_3":"https://svbeauty.mt/wp-content/uploads/2020/09/guccibloombanner-1536x640.png "
+      "image": "https://i.ibb.co/JkPKwGs/png-clipart-laptop.png",
+      "title": "Asus",
+      "ad_img_1": "https://i.pinimg.com/736x/f3/d6/fe/f3d6fe6e0707236986042ddc3e414da2.jpg",
+      "ad_img_2": "https://i.pinimg.com/736x/06/ee/60/06ee602c3203dcd3a229f5dc361a6724.jpg",
+      "ad_img_3":"https://i.pinimg.com/originals/27/f9/2a/27f92acb10d3547e7199fc4982f73022.jpg"
     },
     {
       "id": 5,
-      "image": "https://i.ibb.co/SVY2Jpc/card-3.png",
-      "title": "Zara",
-      "ad_img_1": "https://assets.designhill.com/design-blog/wp-content/uploads/2019/01/2-7.jpg ",
-      "ad_img_2": " https://assets.designhill.com/design-blog/wp-content/uploads/2019/01/1-6.jpg",
-      "ad_img_3":"https://assets.designhill.com/design-blog/wp-content/uploads/2019/01/2-7.jpg "
+      "image": "https://i.ibb.co/WsPb1WM/Acer-logo.jpg",
+      "title": "Acer",
+      "ad_img_1": "https://static-ecapac.acer.com/media/wysiwyg/Acer-One-Estore-Banner_800x800.jpg",
+      "ad_img_2": "https://pbs.twimg.com/media/ErjadBAXMAAM8TA.jpg",
+      "ad_img_3":"https://m.media-amazon.com/images/I/61hz4tZIfJL.jpg"
     },
     {
       "id": 6,
-      "image": "https://media.licdn.com/dms/image/C5122AQFY3oVVmK8U9Q/feedshare-shrink_2048_1536/0/1576521289176?e=2147483647&v=beta&t=qohjVCF8F8fs8q2TX9VDH4YESMZczAIF9vpPIF4VWp8",
+      "image": "https://i.ibb.co/JcLy76s/lenevo-logo.png",
       "title": "One Ummah BD",
-      "ad_img_1": "https://useful-tips.xyz/wp-content/uploads/2023/07/One-Ummah-BD-1.png",
-      "ad_img_2": " https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2023/02/summer-banner-1.webp",
-      "ad_img_3":" https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2023/02/classic.webp"
+      "ad_img_1": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0276b6125874997.612262dbc65e9.jpg",
+      "ad_img_2": " https://img.freepik.com/premium-vector/new-laptop-sale-promotion-social-facebook-cover-banner_252779-424.jpg",
+      "ad_img_3":"https://i.pinimg.com/originals/0b/ad/7b/0bad7b00b5eaadbf238b06089fa2ed08.jpg"
     }
   ]
