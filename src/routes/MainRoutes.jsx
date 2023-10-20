@@ -5,8 +5,7 @@ import AddProduct from "../pages/AddProduct";
 import MyCart from "../pages/MyCart";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
-import Card from "../Card/Card";
-
+import CompanyCard from "../companycard/CompanyCard";
 
 
 const router = createBrowserRouter([
@@ -34,10 +33,11 @@ const router = createBrowserRouter([
                 path:'/register',
                 element: <Register></Register>
             },
-            {
-                path:'/products',
-                element: <Card></Card>
-            }
+           {
+            path: '/companys/:id',
+            element:<CompanyCard></CompanyCard>,
+            loader: ()=> fetch('/electronic.json')
+           }
         ]
     },
 ]);

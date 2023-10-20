@@ -11,16 +11,7 @@ const Login = () => {
     const navigate = useNavigate();
     console.log(location);
 
-    const hangleGoogle = () =>{
-        console.log("hanldeClilc")
-        signInGoogle()
-        .then(result => {
-            console.log(result.user)
-        })
-        .catch(error => {
-            console.log(error)
-        })
-    }
+    
     const handlLogin = e => {
         e.preventDefault();
         console.log(e.currentTarget);
@@ -42,13 +33,26 @@ const Login = () => {
             })
             .catch(error => {
                 console.error(error)
-                Swal.fire(
-                    'login failed!',
-                    'Wrong Information!',
-                    'question');
+                // Swal.fire(
+                //     'login failed!',
+                //     'Wrong Information!',
+                //     'question');
             })
 
+            
     }
+
+    const hangleGoogle = () =>{
+        signInGoogle()
+        .then(result => {
+            console.log(result.user)
+            navigate(location?.state ? location.state : '/')
+        })
+        .catch(error => {
+            console.log(error)
+        })
+    }
+
     return (
         <div className='bg-[#0000001c] py-5'>
 
