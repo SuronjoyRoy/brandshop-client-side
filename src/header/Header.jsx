@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from'../assets/img/logo.svg';
+import logo from'../assets/img/logo.png';
 import img from '../assets/img/user.png';
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
@@ -24,7 +24,7 @@ const Header = () => {
         <div className="navbar bg-base-100">
             <div className="navbar-start">
                 <div className="">
-                    <img className="hidden lg:flex" src={logo} alt="" />
+                    <img className="hidden lg:flex w-[50%] p-5" src={logo} alt="" />
                 </div>
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

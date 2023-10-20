@@ -34,9 +34,9 @@ const AddProduct = () => {
         Swal.fire(
             {
             title: "success",
-            text: "successfully",
+            text: "You have successfully added",
             icon: "success",
-            confirmButtonText: "cool"
+            confirmButtonText: "Ok"
             }
           )}
 
