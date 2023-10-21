@@ -6,7 +6,7 @@ const CompanyCard = () => {
     const cardData = useLoaderData();
     console.log(cardData);
     const { id } = useParams();
-  const brandData = cardData.find((brand) => brand.id == id);
+  const brandData = cardData.find((brand) => brand?.id == id);
 
   const [products, setProducts] = useState([]);
 
@@ -16,14 +16,14 @@ const CompanyCard = () => {
         .then(data => setProducts(data))
 }, [])
 
-const companyProducts = products.filter(brandProduct => brandProduct.brand == brandData.title)
+const companyProducts = products.filter(brandProduct => brandProduct?.brand == brandData?.title)
 
     return (
         <div>
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img
-                        src={brandData.ad_img_1}
+                        src={brandData?.ad_img_1}
                         className="w-full h-[450px]"
                     />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -37,7 +37,7 @@ const companyProducts = products.filter(brandProduct => brandProduct.brand == br
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
                     <img
-                        src={brandData.ad_img_2}
+                        src={brandData?.ad_img_2}
                         className="w-full h-[450px]"
                     />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -52,7 +52,7 @@ const companyProducts = products.filter(brandProduct => brandProduct.brand == br
                 <div id="slide3" className="carousel-item relative w-full h-[450px]">
                     <img
                         src=
-                        {brandData.ad_img_3}
+                        {brandData?.ad_img_3}
                         className="w-full"
                     />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

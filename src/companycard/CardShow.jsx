@@ -19,7 +19,7 @@ const CardShow = ({product}) => {
       <div className="badge badge-outline">Brand: {brand}</div>
      </div>
     </div>
-     <Link to={`/brand/${_id}`}>
+     <Link to={`/companys/${_id}`}>
      <button className="btn btn-block">Details</button>
      </Link>
      <Link to={`/update/${_id}`}>

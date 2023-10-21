@@ -52,11 +52,12 @@ const AddProduct = () => {
         <div className="bg-[#F4F3F0] p-24">
     
    
-<div>
+{/* <div>
         <h1 className="text-3xl font-bold text-center">Add a Product</h1>
-        <p className="text-center mb-10">Enter your details to Add Product .</p>
-      </div>
-      <form onSubmit={handleAddProduct}>
+        
+      </div> */}
+      <form onSubmit={handleAddProduct} className="bg-white lg:p-20">
+      <h1 className="text-3xl mb-4 font-bold text-center">Add a Product</h1>
         {/* form name and quantity row */}
         <div className="md:flex gap-8 mb-4">
           <div className="form-control md:w-1/2">

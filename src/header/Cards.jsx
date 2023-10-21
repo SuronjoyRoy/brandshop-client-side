@@ -6,7 +6,7 @@ const Cards = ({ card }) => {
     console.log(card)
     return (
         <>
-            <Link to={`/companys/${id}`}>
+            <Link to={`/company/${id}`}>
                 <div className="card card-compact bg-base-100 shadow-xl mb-4">
                     <figure>
                         <img src={image} className="w-full h-[200px]" alt="" />

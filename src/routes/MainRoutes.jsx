@@ -6,6 +6,8 @@ import MyCart from "../pages/MyCart";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import CompanyCard from "../companycard/CompanyCard";
+import ProductDetails from "../companycard/ProductDetails";
+import UpdateCard from "../companycard/UpdateCard";
 
 
 const router = createBrowserRouter([
@@ -23,7 +25,8 @@ const router = createBrowserRouter([
             },
             {
                 path:'/mycart',
-                element:<MyCart></MyCart>
+                element:<MyCart></MyCart>,
+                loader: () => fetch('http://localhost:5000/cart')
             },
             {
                 path:'/login',
@@ -34,9 +37,22 @@ const router = createBrowserRouter([
                 element: <Register></Register>
             },
            {
-            path: '/companys/:id',
+            path: '/company/:id',
             element:<CompanyCard></CompanyCard>,
             loader: ()=> fetch('/electronic.json')
+           },
+           {
+            path: "companys/:id",
+            element: <ProductDetails></ProductDetails>,
+            loader: ({ params }) =>
+              fetch(
+                `http://localhost:5000/products/${params.id}`
+              ),
+          },
+           {
+            path: '/update/:id',
+            element:<UpdateCard></UpdateCard>,
+            loader: ({params})=> fetch(`http://localhost:5000/products/${params.id}`)
            }
         ]
     },
