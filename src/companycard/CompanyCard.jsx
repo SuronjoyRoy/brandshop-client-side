@@ -4,7 +4,7 @@ import CardShow from "./CardShow";
 
 const CompanyCard = () => {
     const cardData = useLoaderData();
-    console.log(cardData);
+    // console.log(cardData);
     const { id } = useParams();
   const brandData = cardData.find((brand) => brand?.id == id);
 

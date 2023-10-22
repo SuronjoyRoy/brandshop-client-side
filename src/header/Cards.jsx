@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 
 const Cards = ({ card }) => {
     const {id, image, title } = card;
-    console.log(image);
-    console.log(card)
+    
     return (
         <>
             <Link to={`/company/${id}`}>

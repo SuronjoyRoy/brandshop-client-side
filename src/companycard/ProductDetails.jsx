@@ -6,7 +6,7 @@ const ProductDetails = () => {
 
   const [myCartCards, setMyCartCards] = useState([]);
   const productDetails = useLoaderData();
-  console.log(productDetails);
+  // console.log(productDetails);
   const { name,photo,details,price } = productDetails;
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const ProductDetails = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 if (data.insertedId) {
                     return (
                         Swal.fire({

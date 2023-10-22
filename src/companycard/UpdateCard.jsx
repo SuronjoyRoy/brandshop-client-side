@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 const UpdateCard = () => {
     const updateData = useLoaderData();
-    console.log(updateData);
+    // console.log(updateData);
     // eslint-disable-next-line no-unused-vars
     const { _id, photo, name, price, brand, rating, details, type } = updateData;
     const updateProduct = e => {
