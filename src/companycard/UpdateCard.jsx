@@ -31,20 +31,23 @@ const UpdateCard = () => {
         fetch(
             `http://localhost:5000/products/${_id}`,
             {
-              method: "PUT",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(newProduct),
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(newProduct),
             }
-          )
+        )
             .then((res) => res.json())
             .then((data) => {
-              console.log(data);
-              if (data.modifiedCount > 0) {
-                Swal("product Updated!", "Your product has been updated.", "success");
-              }
-              // navigate("/");
+                console.log(data);
+                if (data.modifiedCount) {
+                    Swal.fire(
+                      'Updated!',
+                      'Your has been successfully updated.',
+                      'success'
+                    )
+                  }
             });
     }
     return (
@@ -182,7 +185,7 @@ const UpdateCard = () => {
                 </div>
                 <input
                     type="submit"
-                    value="Add Product"
+                    value="Update a Product"
                     className="btn btn-block bg-black border-none text-white"
                 />
             </form>
