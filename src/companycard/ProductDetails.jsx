@@ -10,7 +10,7 @@ const ProductDetails = () => {
   const { name,photo,details,price } = productDetails;
 
   useEffect(() => {
-    fetch('http://localhost:5000/cart')
+    fetch('https://brandshop-server-side-three.vercel.app/cart')
         .then(res => res.json())
         .then(data => setMyCartCards(data))
 }, [myCartCards])
@@ -19,7 +19,7 @@ const ProductDetails = () => {
     const getMyCartCards = myCartCards || []
     const isExist = getMyCartCards.find(cartCard => cartCard._id === productDetails._id)
     if (!isExist) {
-        fetch('http://localhost:5000/cart', {
+        fetch('https://brandshop-server-side-three.vercel.app/cart', {
             method: "POST",
             headers: {
                 "content-type": "application/json"

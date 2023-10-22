@@ -11,7 +11,7 @@ const CompanyCard = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/products`)
+    fetch(`https://brandshop-server-side-three.vercel.app/products`)
         .then(res => res.json())
         .then(data => setProducts(data))
 }, [])

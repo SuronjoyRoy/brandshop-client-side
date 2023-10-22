@@ -29,7 +29,7 @@ const UpdateCard = () => {
         }
         console.log(newProduct);
         fetch(
-            `http://localhost:5000/products/${_id}`,
+            `https://brandshop-server-side-three.vercel.app/products/${_id}`,
             {
                 method: "PUT",
                 headers: {

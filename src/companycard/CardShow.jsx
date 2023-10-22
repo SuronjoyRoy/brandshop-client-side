@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const CardShow = ({product}) => {
     const {_id,photo,brand,name,type,price,rating} = product;
     return (
-        <div className="card w-full h-[400px]  bg-base-100 shadow-xl">
-  <figure><img className="w-full h-[200px]" src={photo} alt="Shoes" /></figure>
+        <div className="card w-full h-[500px]  bg-base-100 shadow-xl">
+  <figure><img className="w-full h-[300px]" src={photo} alt="Shoes" /></figure>
   <div className="card-body">
     <h2 className="card-title">
       {name}

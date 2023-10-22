@@ -26,7 +26,7 @@ const router = createBrowserRouter([
             {
                 path:'/mycart',
                 element:<MyCart></MyCart>,
-                loader: () => fetch('http://localhost:5000/cart')
+                loader: () => fetch('https://brandshop-server-side-three.vercel.app/cart')
             },
             {
                 path:'/login',
@@ -46,13 +46,13 @@ const router = createBrowserRouter([
             element: <ProductDetails></ProductDetails>,
             loader: ({ params }) =>
               fetch(
-                `http://localhost:5000/products/${params.id}`
+                `https://brandshop-server-side-three.vercel.app/products/${params.id}`
               ),
           },
            {
             path: '/update/:id',
             element:<UpdateCard></UpdateCard>,
-            loader: ({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+            loader: ({params})=> fetch(`https://brandshop-server-side-three.vercel.app/products/${params.id}`)
            }
         ]
     },
