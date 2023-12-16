@@ -11,3 +11,5 @@
 
 
 Live link: https://wary-level.surge.sh/
+Clide site: https://github.com/SuronjoyRoy/brandshop-client-side
+Server site: https://github.com/SuronjoyRoy/brandshop-server-side
