@@ -11,7 +11,6 @@ const Login = () => {
     const navigate = useNavigate();
     console.log(location);
 
-    
     const handlLogin = e => {
         e.preventDefault();
         console.log(e.currentTarget);
@@ -28,15 +27,9 @@ const Login = () => {
                     'Congratulations!',
                     'success');
                 navigate(location?.state ? location.state : '/')
-
-
             })
             .catch(error => {
                 console.error(error)
-                // Swal.fire(
-                //     'login failed!',
-                //     'Wrong Information!',
-                //     'question');
             })
 
             
